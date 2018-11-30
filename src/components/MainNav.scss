@@ -1,10 +1,10 @@
 .main-nav {
-	display: flex;
-	justify-content: center;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
-	.nav-item {
-		font-size: $font-md;
-		margin: 0 $spacing-md;
-	}
+  .nav-item {
+    font-size: $font-md;
+    margin: 0 $spacing-md;
+  }
 }

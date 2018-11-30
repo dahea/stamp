@@ -1,23 +1,23 @@
 footer {
-	display: grid;
-	grid-template-rows: 1fr;
-	justify-content: center;
-	margin: $spacing-md 0;
-	font-size: $font-xs;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  margin: $spacing-md 0;
+  font-size: $font-xs;
 
-	.copyright {
-		order: 1;
-		text-align: center;
-		margin-top: $spacing-md;
-	}
+  .copyright {
+    order: 1;
+    text-align: center;
+    margin-top: $spacing-md;
+  }
 
-	@include tablet {
-		grid-template-columns: 1fr auto;
+  @include tablet {
+    grid-template-columns: 1fr auto;
 
-		.copyright {
-			order: 0;
-			text-align: left;
-			margin-top: 0
-		}
-	}
+    .copyright {
+      order: 0;
+      text-align: left;
+      margin-top: 0
+    }
+  }
 }

@@ -16,40 +16,40 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 main, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {
-	display: block;
+  display: block;
 }
 /* HTML5 hidden-attribute fix for newer browsers */
 *[hidden] {
     display: none;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
@@ -58,33 +58,33 @@ table {
 textarea,
 select,
 input {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-background-clip: padding;
-	-moz-background-clip: padding;
-	background-clip:padding-box;
-	-webkit-border-radius:0;
-	-moz-border-radius:0;
-	-ms-border-radius:0;
-	-o-border-radius:0;
-	border-radius:0;
-	-webkit-appearance:none;
-	background-color:#fff;
-	color:#000;
-	outline:0;
-	margin:0;
-	padding:0;
-	text-align: left;
-	font-size:1em;
-	height: 1em;
-	vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip:padding-box;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+  border-radius:0;
+  -webkit-appearance:none;
+  background-color:#fff;
+  color:#000;
+  outline:0;
+  margin:0;
+  padding:0;
+  text-align: left;
+  font-size:1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 select, select, select {
-	background: #fff;
-	background-repeat: no-repeat;
-	background-position: 97% center;
-	padding:0 25px 0 8px;
-	font-size: .875em
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  padding:0 25px 0 8px;
+  font-size: .875em
 }

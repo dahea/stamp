@@ -1,30 +1,30 @@
 
 .App {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1440px;
-	padding: $spacing-md $spacing-md $spacing-sm;
-	box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: $spacing-md $spacing-md $spacing-sm;
+  box-sizing: border-box;
 
-	@include tablet {
-		display: grid;
-		min-height: 100vh;
-		grid-template-rows: $header-height auto $footer-height
-	}
+  @include tablet {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: $header-height auto $footer-height
+  }
 
-	@include desktop {
-		padding: $spacing-md $spacing-xl $spacing-sm;
-	}
+  @include desktop {
+    padding: $spacing-md $spacing-xl $spacing-sm;
+  }
 
-	&.show-nav {
-		overflow: hidden;
-		height: 100vh;
-		.secondary-nav-wrapper {
-			z-index: 1;
-			opacity: 1;
-			transform: scale(1);
-			pointer-events: all;
-			background: rgba(darken($blue, 40), 0.95);
-		}
-	}
+  &.show-nav {
+    overflow: hidden;
+    height: 100vh;
+    .secondary-nav-wrapper {
+      z-index: 1;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: all;
+      background: rgba(darken($blue, 40), 0.95);
+    }
+  }
 }

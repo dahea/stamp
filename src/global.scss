@@ -1,56 +1,56 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	color: $text;
-	font-size: $font-sm;
-	font-weight: 300;
-	background: url(./assets/background.jpg) no-repeat top center;
-	background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: $text;
+  font-size: $font-sm;
+  font-weight: 300;
+  background: url(./assets/background.jpg) no-repeat top center;
+  background-size: cover;
 
-	&:after {
-		z-index: -1;
-		content: '';
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: #000;
-		opacity: 0.65;
-	}
+  &:after {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.65;
+  }
 }
 
 input {
-	height: $form-item-height;
-	width: 100%;
-	padding: 0 15px;
-	border: none;
-	background: none;
+  height: $form-item-height;
+  width: 100%;
+  padding: 0 15px;
+  border: none;
+  background: none;
 
-	&::placeholder {
-		color: $text-dark;
-	}
+  &::placeholder {
+    color: $text-dark;
+  }
 }
 
 button {
-	border: none;
-	color: $white;
-	background: $blue;
-	@include animate;
+  border: none;
+  color: $white;
+  background: $blue;
+  @include animate;
 
-	&:hover {
-		background: $blue-hover;
-	}
+  &:hover {
+    background: $blue-hover;
+  }
 }
 
 a, button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-	color: $white;
-	@include animate;
-	&:hover {
-		color: $blue;
-	}
+  color: $white;
+  @include animate;
+  &:hover {
+    color: $blue;
+  }
 }

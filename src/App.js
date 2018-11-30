@@ -4,17 +4,17 @@ import Footer from './components/Footer';
 import Splash from './pages/Splash';
 
 class App extends Component {
-	constructor(props) {
-		super(props)
+  constructor(props) {
+    super(props)
 
-		this.state = {
-			isMobileNavVisible: false
-		}
-	}
+    this.state = {
+      isMobileNavVisible: false
+    }
+  }
 
-	handleNavToggleClick = () => {
-		this.setState({isMobileNavVisible: !this.state.isMobileNavVisible})
-	}
+  handleNavToggleClick = () => {
+    this.setState({isMobileNavVisible: !this.state.isMobileNavVisible})
+  }
 
   render() {
     return (
