@@ -5,7 +5,7 @@ import SecondaryNav from './SecondaryNav';
 const Header = ({handleNavToggleClick, isMobileNavVisible}) => (
   <header>
     <div className="logo">Stamp</div>
-    <MainNav />
+    <MainNav navType="header" />
     <SecondaryNav handleNavToggleClick={handleNavToggleClick} isMobileNavVisible={isMobileNavVisible} />
   </header>
 )
