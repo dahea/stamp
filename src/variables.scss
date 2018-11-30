@@ -1,0 +1,46 @@
+// Text colors
+$text: #fdfdfc;
+$text-dark: #a4a4a6;
+
+
+// Misc colors
+$blue: #2c99ed;
+$blue-hover: darken($blue, 15);
+$white: #fff;
+$black: #000;
+
+// Border-radii
+$border-radius: 5px;
+
+// Spacing
+$spacing-sm: 10px;
+$spacing-smd: 14px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 60px;
+$spacing-xxl: 80px;
+$spacing-xxxl: 100px;
+
+// Font sizes
+$font-xs: 11px;
+$font-sm: 13px;
+$font-md: 16px;
+$font-lg: 46px;
+$font-xl: 52px;
+
+// logo size
+$logo-font: 30px;
+
+
+// Set sizes
+$form-item-height: 60px;
+$form-icon-size: 18px;
+$form-max-width: 400px;
+$header-height: 50px;
+$footer-height: 50px;
+
+// Breakpoints
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-lg-width: 1440px;

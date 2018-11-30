@@ -1,0 +1,23 @@
+header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+
+	.logo {
+		font-weight: 600;
+		font-size: $logo-font;
+		text-transform: uppercase;
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+	@include tablet {
+		grid-template-columns: 100px 1fr auto;
+		align-items: baseline;
+
+		.main-nav {
+			display: block;
+		}
+	}
+}

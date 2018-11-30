@@ -1,0 +1,131 @@
+.splash {
+	display: grid;
+	grid-template-columns: minmax(1fr, 320px);
+	grid-template-rows: 1fr auto;
+	grid-gap: $spacing-md;
+	padding: $spacing-xl 0 $spacing-lg;
+	justify-content: center;
+
+	@include tablet {
+		grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+		grid-gap: $spacing-xl;
+		padding: $spacing-xl 0 $spacing-md;
+		max-width: $desktop-width;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	.info-text {
+		text-align: center;
+		line-height: 1.25;
+		margin-bottom: $spacing-xl;
+
+		.title {
+			font-size: $font-lg;
+			font-weight: 500;
+			margin-bottom: $spacing-lg;
+		}
+
+		.subtitle {
+			font-size: $font-md;
+			line-height: 1.5;
+		}
+
+		@include tablet {
+			text-align: left;
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			.title {
+				font-size: $font-xl;
+			}
+		}
+	}
+
+	form {
+		max-width: $mobile-width;
+		margin: 0 auto;
+
+		@include tablet {
+			max-width: $form-max-width;
+		}
+	}
+
+	.form-title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: $spacing-lg;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.inputs-wrapper {
+		background: rgba($white, 0.1);
+		margin-bottom: $spacing-md;
+
+		> input {
+			&:first-child {
+				border-radius: $border-radius $border-radius 0 0
+			}
+		}
+	}
+
+
+	.input-wrapper {
+		position: relative;
+
+		input {
+			margin-right: $form-icon-size * 2;
+		}
+	}
+
+	.password-toggle {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		right: $spacing-md;
+		width: $form-icon-size;;
+		height: $form-icon-size;;
+		transform: translateY(-50%);
+
+		svg {
+			width: inherit;
+			stroke: $text-dark;
+			@include animate;
+		}
+
+		&:hover {
+			svg {
+				stroke: $text;
+			}
+		}
+	}
+
+	input {
+		color: $text;
+		border: 1px solid rgba($white, 0.5);
+		border-bottom: 0;
+	}
+
+	button {
+		height: $form-item-height;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 0 $border-radius $border-radius;
+
+		svg {
+			width: $font-sm;
+			height: $font-sm;
+		}
+	}
+
+	.tos {
+		text-align: center;
+		font-size: $font-xs;
+		color: $text-dark;
+		line-height: 1.75;
+	}
+}

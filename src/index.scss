@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import './reset.scss';
+@import './variables.scss';
+@import './mixins.scss';
+@import './global.scss';
+
+
+@import './App.scss';
+
+
+/* component specific styles */
+@import './components/Header.scss';
+@import './components/MainNav.scss';
+@import './components/SecondaryNav.scss';
+
+@import './components/Footer.scss';
+@import './components/FooterNav.scss';
+
+/* page specific styles */
+@import './pages/Splash.scss';
+
+
+
+
+

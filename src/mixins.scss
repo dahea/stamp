@@ -1,0 +1,40 @@
+
+// Mixins
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: #{$desktop-lg-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-inset {
+	.inset {
+		width: 100%;
+		max-width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@mixin animate($speed: 0.3s) {
+  transition: all ease $speed
+}
